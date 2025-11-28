@@ -14,7 +14,7 @@ export default function useReveal() {
       },
       {
         threshold: 0,
-        rootMargin: "0px 0px -10% 0px", // ⭐ small elements ke liye perfect
+        rootMargin: "0px 0px -10% 0px", 
       }
     );
 

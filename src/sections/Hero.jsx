@@ -43,8 +43,8 @@ export default function Hero() {
         View My Work
       </a>
       <a
-  href="/resume.pdf"       // public folder me rakha file
-  download                // ye attribute file ko download kar dega
+  href="/resume.pdf"       
+  download               
   className="mt-6 px-6 py-3 rounded-xl bg-gradient-to-r from-green-500 to-blue-500 text-white font-semibold shadow-lg hover:scale-105 transition-all"
 >
   Download Resume

@@ -10,11 +10,11 @@ export default function Navbar({ theme, setTheme }) {
         </h1>
 
         <div className="flex items-center gap-4">
-          <Link to="/" className="hidden md:inline text-sm font-medium">Home</Link>
-          <Link to="/about" className="hidden md:inline text-sm font-medium">About</Link>
-          <Link to="/skills" className="hidden md:inline text-sm font-medium">Skills</Link>
-          <Link to="/projects" className="hidden md:inline text-sm font-medium">Projects</Link>
-          <Link to="/contact" className="hidden md:inline text-sm font-medium">Contact</Link>
+          <Link to="/" className="inline-block md:inline text-sm font-medium">Home</Link>
+          <Link to="/about" className="inline-block md:inline text-sm font-medium">About</Link>
+          <Link to="/skills" className="inline-block md:inline text-sm font-medium">Skills</Link>
+          <Link to="/projects" className="inline-block md:inline text-sm font-medium">Projects</Link>
+          <Link to="/contact" className="inline-block md:inline text-sm font-medium">Contact</Link>
 
           <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}

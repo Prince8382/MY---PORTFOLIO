@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* Global reset-ish */
 html, body, #root {
   height: 100%;
 }
