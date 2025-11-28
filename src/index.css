@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* Global reset-ish */
+html, body, #root {
+  height: 100%;
+}
+
+/* Animations */
+@keyframes pulseSlow {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+.animate-pulse-slow { animation: pulseSlow 3s infinite ease-in-out; }
+
+/* Fade In */
+.fade-in { opacity: 0; transform: translateY(-20px); transition: 1s ease; }
+.fade-in.show { opacity: 1; transform: translateY(0); }
+
+/* Fade Up */
+.fade-up { opacity: 0; transform: translateY(40px); transition: 0.8s ease; }
+.fade-up.show { opacity: 1; transform: translateY(0); }
+
+/* Zoom In */
+.zoom-in { opacity: 0; transform: scale(0.8); transition: 0.8s ease; }
+.zoom-in.show { opacity: 1; transform: scale(1); }
+
+/* Slide Up */
+.slide-up { opacity: 0; transform: translateY(60px); transition: 0.9s ease; }
+.slide-up.show { opacity: 1; transform: translateY(0); }
+
+/* Skills Bounce */
+@keyframes bounceScale {
+  0% { transform: scale(0); }
+  60% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+.skill-pop { animation: bounceScale 0.6s ease forwards; opacity: 0; }
+
+/* Reveal */
+.show {
+   opacity: 1;
+   transform: none;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .text-5xl { font-size: 2rem; }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* DARK MODE FIX */
+html.dark body {
+  background-color: #000;
+  color: #fff;
+}
+
+html.dark {
+  color-scheme: dark;
+}
